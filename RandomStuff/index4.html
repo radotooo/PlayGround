@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html id="app" lang="en" dir="ltr" ng-csp ng-strict-di>
+
+<head>
+    <meta charset="utf-8">
+    <title ng-bind="(&#39;loginTitle&#39; | localize) + &#39; - Spotify&#39;">Spotify</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <base href="/">
+    <link rel="icon" href="https://accounts.scdn.co/sso/images/favicon.ace4d8543bbb017893402a1e9d1ac1fa.ico">
+    <link href="https://accounts.scdn.co/sso/css/index.d515c2fb3219716b0042.css" media="screen" rel="stylesheet">
+
+    <script defer src="https://accounts.scdn.co/sso/js/index.d515c2fb3219716b0042.js" sp-bootstrap></script>
+    <meta ng-non-bindable
+        sp-bootstrap-data='{"phoneFeatureEnabled":false,"previewEnabled":false,"user":false,"tpaState":"AQAmxI4Kaq3ziISY7VnRu/xDgkQJt5zoSGbhsIDUXsS/Vc3LSA+OohywdCPNlAXl+OvJUhIietrHmfdtZaevjNViHmIatFEUzReZTqoxzUlKIbV5k2dhbzPyxDjfalHwC+mkklT6q5O0Hyf7SpsQA+RFiU/pRftNqt7b762WGnWMpOVXMP8nURLDahwK3WRlflLxzfxaBzZPfz/C0dcF5hnrrAbVnt7uK09+fwq8cpfQdKJQsmbndFf8ZbjZx/3CCgCvPYa+DCWcB9dsxKJUQCy3gJw0QQ==","BON":["0","0",297512376]}'>
+</head>
+
+<body ng-controller="LoginController">
+    <div ng-include="template"></div>
+</body>
+
+</html>
