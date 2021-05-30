@@ -4,6 +4,7 @@ import gsap from 'gsap';
 import Footer from '../components/Footer';
 import Mesh from '../components/Pixi3d';
 import Myfilter from '../components/MyFilter';
+import Explosion from '../components/Explosion';
 // import Myfilter from '../components/MyFilter';
 
 export default class Play extends Scene {
@@ -12,10 +13,16 @@ export default class Play extends Scene {
     footer.x = -window.innerWidth / 2;
     footer.y = window.innerHeight / 2 - footer.height;
     this.addChild(footer);
-    this.index = 0;
-    this.createElement();
+    // this.index = 0;
+    // this.createElement();
     // const mesh = new Mesh();
     // this.addChild(mesh);
+    const explosion = new Explosion();
+
+    this.addChild(explosion);
+    document.addEventListener('click', ()=>{
+      explosion.animate();
+    });
   }
 
   createElement() {
