@@ -1,7 +1,14 @@
 import Splash from './scenes/Splash';
 import Play from './scenes/Play';
 import { Container } from 'pixi.js';
+import { PixiPlugin } from 'gsap/PixiPlugin';
+import gsap from 'gsap';
 
+// register the plugin
+// gsap.registerPlugin(PixiPlugin);
+
+// give the plugin a reference to the PIXI object
+// PixiPlugin.registerPIXI(PIXI);
 /**
  * Main game stage, manages scenes/levels.
  *

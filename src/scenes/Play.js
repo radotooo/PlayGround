@@ -20,9 +20,9 @@ export default class Play extends Scene {
     const explosion = new Explosion();
 
     this.addChild(explosion);
-    document.addEventListener('click', ()=>{
-      explosion.animate();
-    });
+    // document.addEventListener('click', ()=>{
+    //   explosion.animate();
+    // });
   }
 
   createElement() {
