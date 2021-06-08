@@ -1,0 +1,7 @@
+{
+    "space-before-blocks":[1, "always"],
+    "comma-spacing": [1, { "before": false, "after": true }],
+    "keyword-spacing": [1, { "before": true, "after": true }],
+    "object-curly-spacing" :["error" , "always"]
+
+}       

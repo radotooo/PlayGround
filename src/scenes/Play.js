@@ -49,7 +49,7 @@ export default class Play extends Scene {
     
       arrow.on('click', () => {
       
-        // var random = Math.floor(Math.random() * 8000) + 6000;
+        // var random = Math.floor(Math.random() * 8000) + 6000;Я
         const random = Math.floor(Math.random() * 800) + 600;
         const tl = new TimelineMax();
         tl 
