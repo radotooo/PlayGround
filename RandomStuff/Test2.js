@@ -4,6 +4,8 @@
 //   return data;
 // }
 
+// const { GraphicsGeometry } = require('@pixi/graphics');
+
 // console.log(document);
 // for (let i = 0; i < 5; i++) {
 //   var btn = document.createElement("button");
@@ -29,7 +31,6 @@
 
 // console.log("dada")
 
-
 // setTimeout(()=>{
 //   console.log("=================================>>>>>>>>>>>>>>>>>>>> vlizav seta")
 // },0)
@@ -39,7 +40,6 @@
   
 // }
 
-
 // let dec = counter.dec();
 // dec();
 
@@ -47,11 +47,19 @@
 // inc();
 // inc();
 // inc();
+function gg() {
+  return new Promise((resolve) =>{
+    let el = 0;
+    for (let i = 0; i < 100000; i++) {
+      el++;
+    }
+    console.log('vliza v setr');
+    resolve(el);
+  });
+}
 
-// console.log(test());
+async function data() {
+  await gg().then((c)=> console.log(c));
+}
 
-const data = new Number(10)
-const data2 = 1 + +'2'
-
-console.log(data2)
-// console.log(data)
+data();

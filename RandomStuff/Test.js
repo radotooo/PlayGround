@@ -72,21 +72,43 @@
 // console.log(datata.next().value);
 // console.log(datata.next().value);
 
-function sarma() {
-  console.log(typeof pesho);
-  {
-    {
-      pesho = 'pesho';
-      var data = 'vutre';
-      let data2 = 'vutre';
-    }
-  }
-  console.log(typeof pesho);
-  // console.log(data2);
-  // console.log(data2)
-}
-sarma();
+// function sarma() {
+//   console.log(typeof pesho);
+//   {
+//     {
+//       pesho = 'pesho';
+//       var data = 'vutre';
+//       let data2 = 'vutre';
+//     }
+//   }
+//   console.log(typeof pesho);
+// console.log(data2);
+// console.log(data2)
+// }
+// sarma();
 // console.log(pesho);
 // console.log(window.pesho);
 // console.log(data)
 // console.log(gg.learn()());
+// 2 4
+const data = [1, 1, 1, 1, 1];
+const reel = [2, 4];
+function gg(data) {
+  let isSet = false;
+  
+  return data.map((x, i) =>{
+    const data = reel.includes(i);
+    const minMax = x >= 1 && x <= 1;
+    if (data && minMax) {
+      if (!isSet) {
+        isSet = true;
+        
+        return true;
+      }   
+      
+      return false;
+    }
+  });
+}
+
+console.log(gg(data));
